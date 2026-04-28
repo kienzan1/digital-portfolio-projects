@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", monospace;
   background: #0f172a;
   color: #c9d1d9;
 }
@@ -34,17 +34,28 @@ header img {
   transition: transform 0.2s ease;
 }
 
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-logo { width: 140px; filter: drop-shadow(0 0 10px rgba(88,166,255,0.4)); }
+
 .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
 .hero-container {
     padding: 40px 20px;
-    border: 1px solid rgba(88,166,255,0.15);
+    border: 1px solid rgba(88, 166, 255, 0.15);
     border-radius: 12px;
-    background: radial-gradient(circle at top, rgba(88,166,255,0.08), transparent 60%), #0d1117;
+    background: radial-gradient(circle at top, rgba(88, 166, 255, 0.08), transparent 60%), #0d1117;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 15px;
 }
 
 .projects {
@@ -52,7 +63,6 @@ header img {
   justify-content: center;
   gap: 30px;
   padding: 40px;
-  flex-wrap: wrap;
 }
 
 .card {
